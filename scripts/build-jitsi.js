@@ -11,10 +11,10 @@ const fetch = require("node-fetch");
 console.log("Making webapp directory");
 mkdirp.sync("webapp");
 
-// curl -s https://jitsi.riot.im/libs/external_api.min.js > ./webapp/jitsi_external_api.min.js
+// curl -s https://meet.ikono.tel/libs/external_api.min.js > ./webapp/jitsi_external_api.min.js
 console.log("Downloading Jitsi script");
 const fname = path.join("webapp", "jitsi_external_api.min.js");
-fetch("https://jitsi.riot.im/libs/external_api.min.js").then(res => {
+fetch("https://meet.ikono.tel/libs/external_api.min.js").then(res => {
    const stream = fs.createWriteStream(fname);
    return new Promise((resolve, reject) => {
        res.body.pipe(stream);

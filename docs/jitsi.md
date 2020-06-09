@@ -30,7 +30,7 @@ to your [config](./config.md) the following:
 }
 ```
 
-The default is `jitsi.riot.im` (a free service offered by Riot), and the demo site for
+The default is `meet.ikono.tel` (a free service offered by Riot), and the demo site for
 Jitsi uses `meet.jit.si` (also free).
 
 Once you've applied the config change, refresh Riot and press the call button. This
@@ -53,6 +53,6 @@ default, and you are using riot-web 1.6 or newer, set the following on your home
 ## Mobile app support
 
 Currently the Riot mobile apps do not support custom Jitsi servers and will instead
-use the default `jitsi.riot.im` server. When users on the mobile apps join the call,
+use the default `meet.ikono.tel` server. When users on the mobile apps join the call,
 they will be joining a different conference which has the same name, but not the same
 participants. This is a known bug and which needs to be fixed.
